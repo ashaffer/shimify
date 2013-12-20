@@ -1,0 +1,19 @@
+{
+  "name": "ignoreify",
+  "version": "0.0.0",
+  "description": "More powerful ignore for browserify.  Allows you to provide a map of files/modules (specified as minimatch patterns) to map to particular functions/objects in browserify.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashaffer/ignoreify.git"
+  },
+  "author": "ashaffer",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ashaffer/ignoreify/issues"
+  },
+  "homepage": "https://github.com/ashaffer/ignoreify"
+}
