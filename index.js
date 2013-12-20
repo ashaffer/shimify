@@ -1,4 +1,5 @@
-var through = require('through')
+var fs = require('fs')
+  , through = require('through')
   , Minimatch = require('minimatch').Minimatch;
 
 
@@ -11,7 +12,12 @@ module.exports = function(map) {
   return function(file) {
     for(var i = 0; i < minimatchers.length; i++) {
       if(minimatchers[i].test(file)) {
-        return fs.createReadStream(map[patterns[i]]);
+        var data = fs.readFileSync(map[patterns[i]]);
+        return through(function() {
+        }, function() {
+          this.queue(data);
+          this.queue(null);
+        });
       }
     }
     return through();
