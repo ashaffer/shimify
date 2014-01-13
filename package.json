@@ -1,5 +1,5 @@
 {
-  "name": "shimify",
+  "name": "stubify",
   "version": "0.0.0",
   "description": "More powerful ignore for browserify.  Allows you to provide a map of files/modules (specified as minimatch patterns) to map to particular functions/objects in browserify.",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ashaffer/shimify.git"
+    "url": "https://github.com/ashaffer/stubify.git"
   },
   "author": "ashaffer",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/ashaffer/shimify/issues"
+    "url": "https://github.com/ashaffer/stubify/issues"
   },
-  "homepage": "https://github.com/ashaffer/shimify",
+  "homepage": "https://github.com/ashaffer/stubify",
   "dependencies": {
     "through": "~2.3.4",
     "minimatch": "~0.2.14"
